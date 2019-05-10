@@ -13,3 +13,8 @@ And that must be why [Yann LeCun](https://www.linkedin.com/in/yann-lecun-0b999),
 You can read more in depth about GAN in this awesome [article from Analytics Vidhya](https://www.analyticsvidhya.com/blog/2017/06/introductory-generative-adversarial-networks-gans/).
 
 And Let's move straight on to different variants of GANs! 
+
+Moving directly to some Image generator GANs..we have..
+
+## DCGAN
+  DCGAN - Deep Convolutional GAN is an Image Generator Achitecture that uses a Transpose Convolutional Layer Network for Generating Images and a Covolutional Neural Network as Discriminator, a theory as simple as that.  
