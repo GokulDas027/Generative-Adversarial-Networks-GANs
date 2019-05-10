@@ -18,3 +18,5 @@ Moving directly to some Image generator GANs..we have..
 
 ## DCGAN
   DCGAN - Deep Convolutional GAN is an Image Generator Achitecture that uses a Transpose Convolutional Layer Network for Generating Images and a Covolutional Neural Network as Discriminator, a theory as simple as that.  
+  In detail, The Discriminator is a Batch Normalized, Convolutional Neural Network(other than input layer) without Pooling and uses LeakyReLu activation for Input and Hidden Layers, and Sigmoid for the output layer. Also, due to the absence of Pooling Layers, It uses Convolutional Strides for down sampling the images.
+  ![discriminator architecture](https://github.com/GokulDas027/Generative-Adversarial-Networks-GANs/blob/master/assets/dcgan_discriminator.png?raw=true)
