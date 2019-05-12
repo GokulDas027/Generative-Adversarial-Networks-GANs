@@ -24,4 +24,8 @@ Moving directly to some Image generator GANs..we have..
   The Generator Network consists of Batch Normalized(except the output layer) Transpose Covolutional Neural Network with ReLu activation for hidden layers and TanH as the activation function for the last layer. And it also uses strides 2, but this time for upsampling the initial image.
 ![generator architecture](https://github.com/GokulDas027/Generative-Adversarial-Networks-GANs/blob/master/assets/dcgan_generator.png?raw=true)
 
-Take a look at the [Face Generator DCGAN](https://github.com/GokulDas027/Generative-Adversarial-Networks-GANs/blob/master/Face_Generator.ipynb)
+Take a look at the [Face Generator DCGAN model](https://github.com/GokulDas027/Generative-Adversarial-Networks-GANs/blob/master/Face_Generator.ipynb)
+
+## CycleGAN
+  CycleGAN is an even bigger architecture than the DCGAN, it is made of two discriminator, and two generator networks. And, It uses an Unsupervised approach i.e. the training images don’t have labels.
+  The CycleGAN is used for Image-to-Image translation i.e To transfer the features of one image to other image. The objective is to train generators that learn to transform an image from domain 𝑋 into an image that looks like it belongs to domain 𝑌 (and vice versa).
