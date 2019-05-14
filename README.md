@@ -29,4 +29,9 @@ Take a look at the [Face Generator DCGAN model](https://github.com/GokulDas027/G
 ## CycleGAN
   CycleGAN is an even bigger architecture than the DCGAN, it is made of two discriminator, and two generator networks, using an Unsupervised approach i.e. the training images don’t have labels.
   The CycleGAN is used for Image-to-Image translation i.e To transfer the features of one image to other image. The objective is to train generators that learn to transform an image from domain 𝑋 into an image that looks like it belongs to domain 𝑌 (and vice versa).
-  The Discriminator network is a similar Real or Fake, Convolutional classifier like that in DCGAN. while Generators are made of an encoder, a conv net that is responsible for turning an image into a smaller feature representation, and a decoder, a transpose_conv net that is responsible for turning that representation into an transformed image. 
+  The Discriminator network is a similar Real or Fake, Convolutional classifier like that in DCGAN.
+  ![discriminator architecture](https://github.com/GokulDas027/Generative-Adversarial-Networks-GANs/blob/master/assets/discriminator_layers.png?raw=true)
+  
+  While The Generators are made of an encoder, a conv net that is responsible for turning an image into a smaller feature representation, and a decoder, a transpose_conv net that is responsible for turning that representation into an transformed image. 
+  
+![generator architecture](https://github.com/GokulDas027/Generative-Adversarial-Networks-GANs/blob/master/assets/cyclegan_generator_ex.png?raw=true)
