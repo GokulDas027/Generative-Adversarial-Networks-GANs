@@ -26,9 +26,15 @@ Moving directly to some Image generator GANs..we have..
 
 Take a look at the [Face Generator DCGAN model](https://github.com/GokulDas027/Generative-Adversarial-Networks-GANs/blob/master/Face_Generator.ipynb)
 
+## Pix2Pix
+  Pix2pix is a conditional generative adversarial network (cGAN) that learns mapping from an input image to an output image. It’s used for image-to-image translation i.e To transfer the features of one image to other image.
+  To train the discriminator, firstly the generator generates an output image and the discriminator looks at the input/target pair and the input/output pair and produces its guess about how realistic they are. The weights of the discriminator are then adjusted based on the classification error of the input/output pair and the input/target pair. The generator’s weights are then adjusted based on the output of the discriminator as well as the difference between the output and target image.
+  The generator consists of Encoder that converts the input image into a smaller feature representation, and Decoder, which looks like a typical generator, a series of transpose-convolution layers that reverse the actions of encoder layers. The discriminator, instead of identifying a single image as real or fake, will look at pairs of images (input image and unknown image that is either targete image or generated image), and output a label for pair as real or fake.
+  The problem with pix2pix is training because the two image spaces are needed to be pre-formatted into a single X/Y image that held both tightly-correlated images.And if that seems to be a problem, lets try the next..
+
 ## CycleGAN
-  CycleGAN is an even bigger architecture than the DCGAN, it is made of two discriminator, and two generator networks, using an Unsupervised approach i.e. the training images don’t have labels.
-  The CycleGAN is used for Image-to-Image translation i.e To transfer the features of one image to other image. The objective is to train generators that learn to transform an image from domain 𝑋 into an image that looks like it belongs to domain 𝑌 (and vice versa).
+  CycleGAN is an even bigger architecture than the others, it is made of two discriminator, and two generator networks, using an Unsupervised approach i.e. the training images don’t have labels.
+  The CycleGAN is also used for Image-to-Image translation and the objective is to train generators that learn to transform an image from domain 𝑋 into an image that looks like it belongs to domain 𝑌 (and vice versa).
   The Discriminator network is a similar Real or Fake, Convolutional classifier like that in DCGAN.
   ![discriminator architecture](https://github.com/GokulDas027/Generative-Adversarial-Networks-GANs/blob/master/assets/discriminator_layers.png?raw=true)
   
